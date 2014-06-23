@@ -74,4 +74,17 @@ describe "Static pages" do
 
   end
 
+  describe "Gallery page" do
+    it "should have the content 'Gallery'" do
+      visit '/static_pages/gallery'
+      expect(page).to have_content('Gallery')
+    end
+
+    it "should have the title 'Gallery'" do
+      visit '/static_pages/gallery'
+      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Gallery")
+    end
+
+  end
+
 end
