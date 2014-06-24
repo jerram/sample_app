@@ -4,6 +4,7 @@ SampleApp::Application.routes.draw do
   get "static_pages/gallery"
   get "static_pages/help"
   get "static_pages/about"
+  get "static_pages/shop"
   get "static_pages/contact"
 
 

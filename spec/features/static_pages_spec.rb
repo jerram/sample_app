@@ -87,4 +87,17 @@ describe "Static pages" do
 
   end
 
+  describe "Shop page" do
+    it "should have the content 'Shop'" do
+      visit '/static_pages/shop'
+      expect(page).to have_content('Shop')
+    end
+
+    it "should have the title 'Shop'" do
+      visit '/static_pages/shop'
+      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Shop")
+    end
+
+  end
+
 end

@@ -16,4 +16,7 @@ class StaticPagesController < ApplicationController
 
   def gallery
   end
+
+  def shop
+  end
 end
